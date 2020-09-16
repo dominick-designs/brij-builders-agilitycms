@@ -31,4 +31,4 @@ yarn-error.log*
 
 /ignoreme
 
-/.vscode
+**/.vscode
