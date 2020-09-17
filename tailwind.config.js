@@ -1,4 +1,19 @@
 module.exports = {
+
+  purge: {
+    mode: 'all',
+    content: [
+      './components/**/*.{js,ts,jsx,tsx}',
+      './pages/**/*.{js,ts,jsx,tsx}',
+      './helpers/**/*.{js,ts,jsx,tsx}'
+    ],
+    options: {
+      whitelist: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'blockquote', 'strong'],
+    },
+  },
+
+
+
   prefix: '',
   important: false,
   separator: ':',
@@ -209,8 +224,8 @@ module.exports = {
       "2xl": '1rem',
       "3xl": '1.5rem',
       "4xl": '2.5rem',
-      "5xl":'3rem',
-      "6xl":'4.5rem',
+      "5xl": '3rem',
+      "6xl": '4.5rem',
       full: '9999px',
     },
     borderWidth: {
@@ -262,8 +277,9 @@ module.exports = {
       default: '1',
     },
     fontFamily: {
-      display: ['Inter', 'system-ui'],
+      display: ['Raleway', 'system-ui'],
       sans: [
+        'Raleway',
         'system-ui',
         '-apple-system',
         'BlinkMacSystemFont',
@@ -278,7 +294,7 @@ module.exports = {
         '"Segoe UI Symbol"',
         '"Noto Color Emoji"',
       ],
-      serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+      serif: ['Domine', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       mono: ['Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
     },
     fontSize: {
@@ -768,6 +784,6 @@ module.exports = {
   },
   corePlugins: {},
   plugins: [
-	require('@tailwindcss/typography')
+    require('@tailwindcss/typography')
   ],
 }

@@ -7,9 +7,6 @@ export const PrimaryButton = tw.button`px-8 py-3 font-bold rounded bg-primary-50
 
 export default ({ fields }) => {
 
-	console.log(fields)
-
-
 	return (
 		<>
 			

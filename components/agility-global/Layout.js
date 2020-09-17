@@ -14,8 +14,6 @@ import Error from 'next/error'
 
 export default function Layout(props) {
 
-	console.log(props)
-
 	const { page, sitemapNode, dynamicPageItem, notFound } = props
 
 
@@ -43,7 +41,7 @@ export default function Layout(props) {
 				<title>{sitemapNode?.title} - Brij Builders</title>
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 				<meta name="description" content={page.seo.metaDescription} />
-				<meta name="generator" content="Agility CMS" />
+				<meta name="generator" content="Brij Builders" />
 				<meta name="agility_timestamp" content={new Date().toLocaleString()} />
 				{dynamicPageItem?.seo?.ogImage &&
 					<meta property="og:image" content={dynamicPageItem.seo.ogImage} />

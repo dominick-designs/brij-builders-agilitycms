@@ -5,7 +5,6 @@ import Header, { NavLink, NavLinks, PrimaryLink, LogoLink } from "components/hea
 
 const GlobalHeader = (props) => {
 
-	console.log("globalheader", props)
 	const { globalHeaderProps, sitemapNode, page } = props;
 
 	const globalHeaderItem = globalHeaderProps.contentItem;

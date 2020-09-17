@@ -1,3 +1,4 @@
+import 'css/style.css'
 import "tailwindcss/dist/base.css"
 import 'css/index.css'
 import 'css/PreviewBar.css'

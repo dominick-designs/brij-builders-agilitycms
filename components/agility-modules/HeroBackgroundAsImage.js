@@ -1,8 +1,10 @@
 import Hero from "components/hero/BackgroundAsImage"
 
-export default ({fields}) => {
+export default ({ fields }) => {
 
 	return (
-		<Hero {...fields}/>
+		<>
+			<Hero {...fields} />
+		</>
 	)
 }

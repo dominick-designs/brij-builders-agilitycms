@@ -1,7 +1,7 @@
 /* A simple iframe wrapper that makes 16:9 responsive embed */
 import React from 'react';
 
-export default ({ url, background="black", className="video" }) => {
+export default ({ url, background = "black", className = "video" }) => {
   return (
     <div
       className={className}
@@ -14,7 +14,7 @@ export default ({ url, background="black", className="video" }) => {
       }}
     >
       <iframe
-        title="Embeded Video"
+        title="Brij Builders"
         style={{
           position: "absolute",
           top: 0,
@@ -24,7 +24,14 @@ export default ({ url, background="black", className="video" }) => {
         }}
         src={url}
         frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
       />
     </div>
   );
 };
+
+
+
+
+
